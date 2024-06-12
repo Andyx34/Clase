@@ -10,7 +10,7 @@ class Ejemplar extends Model
     use HasFactory;
     protected $table = 'ejemplares';
     
-    public function libros(){
+    public function libro(){
         return $this->hasMany('App\Models\Libro');
     }
 
